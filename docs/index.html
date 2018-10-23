@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>モーダル</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="overlay js-modal-close"></div>
+
+  <div class="modal-box">
+    <button class="open-modal" data-text="一番最初の画像です" data-image="cat">猫</button>
+    <button class="open-modal" data-text="1" data-image="dog">犬</button>
+    <button class="open-modal" data-text="2" data-image="bird">鳥</button>
+    <button class="open-modal" data-text="3" data-image="whale">鯨</button>
+    <button class="open-modal" data-text="4" data-image="flog">蛙</button>
+    <button class="open-modal" data-text="5" data-image="apple">果</button>
+  </div>
+
+  <div class="modal">
+    <span class="modal-close-cross js-modal-close">
+      <img src="./images/close_cross.png">
+    </span>
+
+    <span class="modal-left-button">
+      <img src="./images/a1.png">
+    </span>
+    <span class="modal-right-button">
+      <img src="./images/a2.png">
+    </span>
+
+    <div class="slide-box">
+      <div class="modal-slide left">
+        <p class="modal-text">テキストが入るところです。</p>
+        <p class="modal-image">
+        </p>
+      </div>
+      <div class="modal-slide active">
+        <p class="modal-text">テキストが入るところです。</p>
+        <p class="modal-image">
+        </p>
+      </div>
+      <div class="modal-slide right">
+        <p class="modal-text">テキストが入るところです。</p>
+        <p class="modal-image">
+        </p>
+      </div>
+    </div>
+
+    <p class="modal-close-button js-modal-close">
+      <img src="./images/modal_close_btn.jpg">
+    </p>
+  </div>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script> -->
+  <script src="./js/index.bundle.js"></script>
+</body>
+
+</html>
